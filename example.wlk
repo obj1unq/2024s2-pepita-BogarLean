@@ -41,7 +41,7 @@ object manzana {
 	}
 	
 }
-object pepón {
+object pepon {
 	var energia = 30
 	
 	method comer(comida) {
