@@ -1,5 +1,5 @@
 object pepita {
-	var energia = 100
+	var energia = 100 //Probando
 	
 	method comer(comida) {
 		energia = energia + comida.energiaQueAporta()
