@@ -22,13 +22,14 @@ object alpiste {
 
 object manzana {
 	var madurez = 1
+	const base = 5
 	
-	//Getter
+	//Getter = Consulta
 	method madurez() {
 		return madurez
 	}
 	
-	//Setter
+	//Setter = Órden (dar una órden)
 	method madurez(_madurez) {
 		madurez = _madurez
 	}
@@ -38,7 +39,7 @@ object manzana {
 	}
 	
 	method energiaQueAporta() {
-		return 5 * madurez
+		return base * madurez
 	}
 	
 }
@@ -64,9 +65,17 @@ object roque {
 
   method indicarAve(nombreDeAve) {
 	aveInicial = nombreDeAve
+
+	cena = 0
   }
 
   method alimentar(alimento) {
 	aveInicial.comer(alimento)
+
+	cena = cena + 1
+  }
+
+  method cenas() {
+	return cena
   }
 }
