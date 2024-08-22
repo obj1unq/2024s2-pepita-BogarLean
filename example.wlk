@@ -22,7 +22,6 @@ object alpiste {
 
 object manzana {
 	var madurez = 1
-	const base = 5
 	
 	//Getter = Consulta
 	method madurez() {
@@ -39,7 +38,7 @@ object manzana {
 	}
 	
 	method energiaQueAporta() {
-		return base * madurez
+		return 5 * madurez
 	}
 	
 }
