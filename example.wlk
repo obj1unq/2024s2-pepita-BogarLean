@@ -42,7 +42,7 @@ object manzana {
 	}
 	
 }
-object pepon {
+object pepon { //No puedo poner la tilde o falla
 	var energia = 30
 	
 	method comer(comida) {
