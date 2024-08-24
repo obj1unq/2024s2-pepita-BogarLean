@@ -22,12 +22,13 @@ object alpiste {
 
 object manzana {
 	var madurez = 1
-	const base = 5
 	
+	//Getter = Consulta
 	method madurez() {
 		return madurez
 	}
 	
+	//Setter = Órden (dar una órden)
 	method madurez(_madurez) {
 		madurez = _madurez
 	}
@@ -37,7 +38,43 @@ object manzana {
 	}
 	
 	method energiaQueAporta() {
-		return base * madurez
+		return 5 * madurez
 	}
 	
+}
+object pepon { //No puedo poner la tilde o falla la visualización
+	var energia = 30
+	
+	method comer(comida) {
+		energia = energia + comida.energiaQueAporta() / 2
+	}
+
+	method volar(distancia) {
+		energia = energia - 20 - distancia * 2
+	}
+
+	method energia() {
+		return energia
+	}
+}
+
+object roque {
+  var aveInicial = pepita
+  var cena = 0
+
+  method indicarAve(nombreDeAve) {
+	aveInicial = nombreDeAve
+
+	cena = 0
+  }
+
+  method alimentar(alimento) {
+	aveInicial.comer(alimento)
+
+	cena = cena + 1
+  }
+
+  method cenas() {
+	return cena
+  }
 }
